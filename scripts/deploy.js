@@ -9,16 +9,6 @@ async function main() {
   await nftEpicContract.deployed();
 
   console.log("MyEpicNFT contract deployed to:", nftEpicContract.address);
-
-  let txn = await nftEpicContract.makeAnEpicNFT();
-  await txn;
-
-  console.log("TXN1 : " , txn);
-
-  txn = await nftEpicContract.makeAnEpicNFT();
-  await txn;
-
-  console.log("TXN2 : " , txn);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
